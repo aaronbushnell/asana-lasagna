@@ -11,9 +11,28 @@ html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverla
     overflow: auto;
 }
 
+
+/* Reorder task fields so it goes assignee, due date, description */
+html.lasagna-active .TaskPaneFields {
+    display: flex;
+    flex-direction: column;
+}
+
+html.lasagna-active .TaskPaneFields .TaskPaneFields-assigneeRow {
+    order: -3;
+}
+
+html.lasagna-active .TaskPaneFields .TaskPaneFields-assigneeRow + div {
+    order: -2;
+}
+
+html.lasagna-active .TaskPaneFields > div:last-of-type {
+    order: -1;
+}
+
 /* Hide the huge list of fields until it's hovered on */
 html.lasagna-active .TaskPaneFields {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     mask-image: linear-gradient(black, transparent);
     position: relative;
