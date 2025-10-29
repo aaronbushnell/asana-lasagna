@@ -8,7 +8,6 @@ html.lasagna-active .TaskStoryFeed-expandMiniStoriesLink {
 /* Make slide-over fill up to 80% of the screen */
 html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-detailsOverlay {
     width: 90% !important;
-    z-index: 999 !important;
     overflow: auto;
 }
 
