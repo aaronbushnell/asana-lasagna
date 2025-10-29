@@ -88,3 +88,8 @@ html.lasagna-active .FullWidthPageStructureWithDetailsOverlay-mainContent {
 html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-mainContent {
     opacity: .3;
 }
+
+/* Hide notices about tasks */
+html.lasagna-active .TaskMessageBanner:has(.TaskCommentOnlyMultihomeBanner-privacyMessage) {
+    display: none;
+}
