@@ -69,3 +69,22 @@ html.lasagna-active .SidebarFooter {
 html.lasagna-active .SidebarInsightsSection {
     display: none;
 }
+
+/* Make the sidebar less noisy until you need it */
+html.lasagna-active #asana_sidebar .Sidebar {
+    opacity: .3;
+    transition: opacity 0.5s ease;
+}
+
+html.lasagna-active #asana_sidebar:hover .Sidebar {
+    opacity: 1;
+}
+
+/* Declutter background when panel is open */
+html.lasagna-active .FullWidthPageStructureWithDetailsOverlay-mainContent {
+    transition: opacity 0.5s ease;
+}
+
+html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-mainContent {
+    opacity: .3;
+}
