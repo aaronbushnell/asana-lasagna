@@ -1,0 +1,12 @@
+/* Hide the countless status updates that add clutter to the comment list */
+html.lasagna-active .TaskStoryFeed-miniStory,
+html.lasagna-active .TaskStoryFeed-activitySeparator,
+html.lasagna-active .TaskStoryFeed-expandMiniStoriesLink {
+    display: none;
+}
+
+/* Make slide-over fill up to 80% of the screen */
+html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-detailsOverlay {
+    width: 90% !important;
+    z-index: 999 !important;
+}
