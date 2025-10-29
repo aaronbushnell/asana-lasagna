@@ -9,4 +9,63 @@ html.lasagna-active .TaskStoryFeed-expandMiniStoriesLink {
 html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-detailsOverlay {
     width: 90% !important;
     z-index: 999 !important;
+    overflow: auto;
+}
+
+/* Hide the huge list of fields until it's hovered on */
+html.lasagna-active .TaskPaneFields {
+    height: 200px;
+    overflow: hidden;
+    mask-image: linear-gradient(black, transparent);
+    position: relative;
+    transition: height 0.5s ease;
+}
+
+html.lasagna-active .TaskPaneFields:hover {
+    height: calc-size(max-content, size);;
+    overflow: auto;
+    mask-image: none;
+}
+
+/* Make the focused, full-screen view nicer to look at */
+html.lasagna-active .TaskPane-feed {
+    margin-top: 0;
+}
+
+html.lasagna-active .FocusModePage {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: auto;
+}
+
+html.lasagna-active .TaskPaneBody-attachmentDropTarget,
+html.lasagna-active .TaskPaneBody--scrollable {
+    flex: none;
+}
+
+html.lasagna-active .TaskPane-footerContainer,
+html.lasagna-active .TaskPane-footerContainer > div,
+html.lasagna-active .TaskPane-footerContainer .TaskPaneFooter {
+    height: 100%;
+}
+
+/* Hide this comment vs activity toolbar */
+html.lasagna-active .TaskStoryFeed-optionsList {
+    display: none;
+}
+
+/* Honestly, even the top bar is kinda useless */
+html.lasagna-active .GlobalTopbarStructure--onBrowser {
+    display: none;
+}
+
+/* I'm not inviting any teammates */
+html.lasagna-active .SidebarFooter {
+    display: none;
+}
+
+/* No thanks, Insights */
+html.lasagna-active .SidebarInsightsSection {
+    display: none;
 }
