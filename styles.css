@@ -12,7 +12,7 @@ html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverla
 }
 
 /* Hide the huge list of fields until it's hovered on */
-html.lasagna-active .TaskPaneFields {
+/*html.lasagna-active .TaskPaneFields {
     height: 200px;
     overflow: hidden;
     mask-image: linear-gradient(black, transparent);
@@ -24,7 +24,7 @@ html.lasagna-active .TaskPaneFields:hover {
     height: calc-size(max-content, size);;
     overflow: auto;
     mask-image: none;
-}
+}*/
 
 /* Make the focused, full-screen view nicer to look at */
 html.lasagna-active .TaskPane-feed {
