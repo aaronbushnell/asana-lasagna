@@ -72,7 +72,7 @@ html.lasagna-active .SidebarInsightsSection {
 
 /* Make the sidebar less noisy until you need it */
 html.lasagna-active #asana_sidebar .Sidebar {
-    opacity: .3;
+    opacity: .2;
     transition: opacity 0.5s ease;
 }
 
