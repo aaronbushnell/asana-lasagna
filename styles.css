@@ -26,6 +26,10 @@ html.lasagna-active .TaskPane-premiumFeaturesSection:has(.lasagna-toggle-task-fi
     mask-image: none;
 }
 
+.lasagna-toggle-task-fields {
+    display: none;
+}
+
 html.lasagna-active .lasagna-toggle-task-fields input {
     display: none;
 }
