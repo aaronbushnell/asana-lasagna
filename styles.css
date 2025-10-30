@@ -161,3 +161,19 @@ html.lasagna-active .SidebarProjectsSectionProjectList-projects .MiniIcon,
 html.lasagna-active .SidebarNavigationLinkCard-icon {
     display: none;
 }
+
+/* Remove noisy project heading toolbars */
+html.lasagna-active .FullWidthPageStructureWithDetailsOverlay-mainContent .PageHeaderThemeablePresentation-breadcrumbsContainer {
+    display: none;
+}
+
+html.lasagna-active .ObjectReorderableTabNavigationBar,
+html.lasagna-active .ProjectPage-listInner .ProjectSpreadsheetGridPageToolbar {
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+}
+
+html.lasagna-active .ObjectReorderableTabNavigationBar:hover,
+html.lasagna-active .ProjectPage-listInner .ProjectSpreadsheetGridPageToolbar:hover {
+    opacity: 1;
+}
