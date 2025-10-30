@@ -146,3 +146,18 @@ html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverla
 html.lasagna-active .TaskMessageBanner:has(.TaskCommentOnlyMultihomeBanner-privacyMessage) {
     display: none;
 }
+
+/* Get rid of icons in sidebar */
+html.lasagna-active .SidebarFlyoutSplitDropdownButton-icon {
+    display: none;
+}
+
+html.lasagna-active .SidebarFlyoutSplitDropdownButton-label,
+html.lasagna-active .SidebarNavigationLinkCard-label {
+    margin-left: 0;
+}
+
+html.lasagna-active .SidebarProjectsSectionProjectList-projects .MiniIcon,
+html.lasagna-active .SidebarNavigationLinkCard-icon {
+    display: none;
+}
