@@ -5,12 +5,16 @@ html.lasagna-active .TaskStoryFeed-expandMiniStoriesLink {
     display: none;
 }
 
-/* Make slide-over fill up to 80% of the screen */
+/* Make slide-over fill the screen */
 html.lasagna-active .FullWidthPageStructureWithDetailsOverlay--withDetailsOverlayOpen .FullWidthPageStructureWithDetailsOverlay-detailsOverlay {
-    width: 90% !important;
+    width: 100% !important;
     overflow: auto;
 }
 
+/* Remove slide-over animation */
+html.lasagna-active .FullWidthPageStructureWithDetailsOverlay-detailsOverlay {
+    transition: none !important;
+}
 
 /* Reorder task fields so it goes assignee, due date, description */
 html.lasagna-active .TaskPaneFields {
