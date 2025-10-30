@@ -33,7 +33,7 @@ function insert(selector, createNode, position = 'afterend') {
 }
 
 // A toggle to show/hide fields in a task
-insert('.TaskPaneFields', () => {
+insert('.SubtleHeartButton.TaskPaneToolbar-button', () => {
   const label = document.createElement('label');
   label.classList.add('lasagna-toggle-task-fields')
   const checkbox = document.createElement('input');

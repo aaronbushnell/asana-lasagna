@@ -34,6 +34,11 @@ html.lasagna-active .TaskPaneFields > div:last-of-type {
     order: -1;
 }
 
+/* Typography */
+html.lasagna-active .TaskPaneBody .TitleInput textarea {
+    font-weight: bold;
+}
+
 /* Hide the huge list of fields until it's hovered on */
 html.lasagna-active .TaskPaneFields {
     height: 300px;
@@ -43,7 +48,7 @@ html.lasagna-active .TaskPaneFields {
     transition: height 0.5s ease;
 }
 
-html.lasagna-active .TaskPane-premiumFeaturesSection:has(.lasagna-toggle-task-fields input:checked) .TaskPaneFields {
+html.lasagna-active .TaskPane:has(.lasagna-toggle-task-fields input:checked) .TaskPaneFields {
     height: calc-size(max-content, size);
     overflow: auto;
     mask-image: none;
@@ -67,16 +72,12 @@ html.lasagna-active .lasagna-toggle-task-fields {
     user-select: none;
     cursor: pointer;
     font-size: 12px;
-    margin-bottom: 5px;
 }
 
-html.lasagna-active .lasagna-toggle-task-fields::after {
-    font-size: 11px;
-    content: "▼";
-}
-
-html.lasagna-active .lasagna-toggle-task-fields:has(input:checked)::after {
-    content: "▲";
+html.lasagna-active .lasagna-toggle-task-fields:has(input:checked) {
+    background: var(--color-success-icon);
+    color: #fff;
+    border-color: var(--color-success-icon);
 }
 
 /* Make the focused, full-screen view nicer to look at */
