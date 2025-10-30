@@ -201,7 +201,7 @@ html.lasagna-active .TaskStoryFeed-blockStory .DomainUserNavigationLink {
 }
 
 html.lasagna-active .TaskStoryFeed-blockStory {
-    background: #fff;
+    background: var(--color-background-weak);
     border-radius: 15px;
     padding-top: 18px !important;
     padding-bottom: 18px !important;
