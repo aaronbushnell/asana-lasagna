@@ -182,3 +182,46 @@ html.lasagna-active .ProjectPage-listInner .ProjectSpreadsheetGridPageToolbar:ho
 html.lasagna-active .Inbox-drawerAnchor .TaskPane {
     overflow: auto;
 }
+
+/* Comment niceties */
+html.lasagna-active .TaskStoryFeed {
+    zoom: 1.1;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html.lasagna-active .TaskStoryFeed-blockStory .BlockStoryStructure-header {
+    margin-bottom: 8px;
+}
+
+html.lasagna-active .TaskStoryFeed-blockStory .DomainUserNavigationLink {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+html.lasagna-active .TaskStoryFeed-blockStory {
+    background: #fff;
+    border-radius: 15px;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+html.lasagna-active .BlockStoryStructure-icon {
+    zoom: 1.5;
+    margin-right: 12px;
+}
+
+html.lasagna-active .TaskPaneFooter {
+    zoom: 1.1;
+}
+
+html.lasagna-active .TaskPaneFooter > * {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
