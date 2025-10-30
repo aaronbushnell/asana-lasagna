@@ -177,3 +177,8 @@ html.lasagna-active .ObjectReorderableTabNavigationBar:hover,
 html.lasagna-active .ProjectPage-listInner .ProjectSpreadsheetGridPageToolbar:hover {
     opacity: 1;
 }
+
+/* Ensure tasks can be scrolled from Inbox */
+html.lasagna-active .Inbox-drawerAnchor .TaskPane {
+    overflow: auto;
+}
